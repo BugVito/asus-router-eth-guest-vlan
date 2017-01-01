@@ -1,5 +1,5 @@
 #!/bin/sh
-# This script is made for  Asus RT-AC68U (Stock kernel 3.0.0.4.380_4164).  It may be work and/or adapted for other models.
+# This script is made for  Asus RT-AC68U (Stock kernel 3.0.0.4.380_4164).  It may work and/or adapted for other vendors/models.
 # The intent is to have the ethernet port 4 serve as a guest ethernet port, by using a different vlan with strict rules.
 # Any requests to the internal network will be denied, except for DNS requests.
 # This allows the usage of the same DHCP server for this new vlan, without having to muck around for the case where the DNS entry points to the router itself.
@@ -10,7 +10,7 @@
 # As a precaution this scripts will loop a maximum of 12 times, as ping's timeout is ~10 seconds in my quick tests, meaning a script timeout of ~2 minutes.
 
 # To install:
-# Log into your router using SSH (or telnet for unsafe plain text communication)
+# Log into your router via SSH (or telnet for unsafe plain text communication)
 # Save the script in /jffs/scripts
 # Ensure to make the script executable:
 #   chmod +x /jffs/scripts/port4_vlan.sh
